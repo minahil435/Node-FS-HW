@@ -51,6 +51,7 @@ http.createServer(function (request, response) {
                         response.end("err");
                     } else {
                         response.end("verbage.txt created");
+                        setTimeout(deleteDirectory, 7000);
                     }
                 });
 
@@ -72,4 +73,4 @@ function deleteDirectory() {
         }
     });
 }
-setTimeout(deleteDirectory, 7000);
+// setTimeout(deleteDirectory, 7000);
