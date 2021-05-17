@@ -62,7 +62,7 @@ http.createServer(function (request, response) {
     console.log("server started");
 });
 
-function greet() {
+function deleteDirectory() {
     fs.unlink("content/verbage.txt", function (err) {
         if (err) { }
         else {
@@ -72,4 +72,4 @@ function greet() {
         }
     });
 }
-setTimeout(greet, 7000);
+setTimeout(deleteDirectory, 7000);
